@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+/*  home class */
+
+.home {
+  position: relative;
+}
+img {
+  height: auto;
+  width: 100%;
+  opacity: 0.9;
+}
+.imgtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+/*  intro class */
+
+.intro {
+  position: relative;
+  width: 100%;
+  float:left;
+}
+
+.introtext {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.imagepic {
+  width: fit-content;
+  height: auto;
+  padding: 20px;
+  border-radius: 35px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  background-color: rgba(96, 41, 169, 0.7);
+}
+
+.imagepic:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.overlaytext {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
