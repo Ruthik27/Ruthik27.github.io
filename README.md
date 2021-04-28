@@ -1,3 +1,4 @@
 # Ruthik27.github.io
-easy updates
-portfolio wesite
+>easy updates
+
+>portfolio website
