@@ -14,6 +14,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 20px;
+  background-color: #1c1d21;
 }
 
 /*-------------------------------------header-----------------------------------------*/
@@ -120,10 +121,10 @@ header {
   0% {
     content: "Data Analyst";
   }
-  20% {
+  21% {
     content: "Gammer";
   }
-  40% {
+  41% {
     content: "Developer";
   }
   60% {
@@ -141,7 +142,12 @@ header {
 
 .home {
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 1000px;
 }
+
 img {
   height: auto;
   width: 100%;
