@@ -118,16 +118,19 @@ header {
 
 @keyframes changetext {
   0% {
-    content: "Programmer";
+    content: "Data Analyst";
   }
-  25% {
+  20% {
     content: "Gammer";
   }
-  50% {
+  40% {
     content: "Developer";
   }
-  75% {
-    content: "Data Analyst";
+  60% {
+    content: "Programmer";
+  }
+  80% {
+    content: "Trader";
   }
   100% {
     content: "Pythonier";
