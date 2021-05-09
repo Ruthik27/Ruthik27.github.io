@@ -75,6 +75,39 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+
+/*  -------------------navigation bar-----------------------------     */
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.navbar p {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  color: black;
+  border-radius: 50px;
+}
+
 /*-------------------------------------paralax eddect--------------------------------*/
 
 header {
@@ -105,11 +138,6 @@ header {
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-}
 
 .postn::after {
   content: "";
@@ -139,6 +167,17 @@ header {
 }
 
 /* ----------------------------- home class ---------------------------------------*/
+.wall {
+  background-image: url("src/black04.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.section {
+  background-color: #e7e9eb;
+  border-radius: 5px;
+}
 
 .home {
   position: relative;
@@ -169,57 +208,70 @@ img {
 }
 
 .introtext {
+  position: relative;
   display: inline-block;
-  width: fit-content;
   margin: 20px;
+  text-align: left;
+
+  width: 500px;
+  height: 500px;
+
+  padding: 60px;
+  margin-left: 400px;
+
+  border-radius: 20px;
+  background-color: #907163;
 }
-/* ------------------------the overlay img edits------------------------------------ */
-.dumb {
+
+.imagepic {
   position: relative;
   width: fit-content;
   height: auto;
   margin: 20px;
-  border-radius: 35px;
-}
-.imagepic {
+
+  margin-top: 70px;
+  margin-left: 70px;
   border-radius: 25px;
-  display: inline-block;
+  display: inline;
   vertical-align: top;
+}
+
+.blocks {
+  position: relative;
+  display: inline;
+}
+
+.blocks p {
+  position: relative;
   width: fit-content;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 200px;
+  height: 400px;
+
+  padding: 60px;
+  margin-top: 150px;
+
+  background-color: #907163;
 }
 
-.overlay {
-  height: 0;
-  top: 0;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #008cba;
-  overflow: hidden;
-  display: block;
-  transition: 0.5s ease;
-  border-radius: 25px;
+p.block1 {
+  margin-left: 70px;
+}
+p.block2 {
+  margin-left: 20px;
+}
+p.block3 {
+  margin-left: 20px;
+}
+p.block4 {
+  margin-left: 20px;
+}
+p.block5 {
+  margin-left: 20px;
 }
 
-.dumb:hover .overlay {
-  width: auto;
-  bottom: 0;
-  height: 100%;
-  opacity: 0.5;
-}
-.overlaytext {
-  white-space: nowrap;
-  color: greenyellow;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  opacity: 1;
-}
 /* -----------------------------------gar----------------------------------------- */
 
 a.ex2:hover,
