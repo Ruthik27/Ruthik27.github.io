@@ -84,6 +84,16 @@ Variables
   top: 0;
   width: 100%;
   padding-right: 30px;
+  z-index: 1;
+  padding-bottom: 0px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* For browsers that do not support gradients */
 }
 
 .navbar p {
@@ -103,6 +113,13 @@ Variables
   font-size: 17px;
 }
 
+a.perman {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
 .navbar a:hover {
   color: black;
   border-radius: 50px;
@@ -235,7 +252,8 @@ img {
   display: inline;
   vertical-align: top;
 }
-
+/*------------------- project -------------------------------------*/
+/*
 .blocks {
   position: relative;
   display: inline;
@@ -249,21 +267,31 @@ img {
   text-align: left;
   width: 200px;
   height: 400px;
-
-  padding: 60px;
-  margin-top: 150px;
+  padding: 20px;
 
   background-color: #907163;
 }
+*/
+.blocks p{
+  background-color:#907163 ;
+  
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+  padding: 20px;
 
+}
 p.block1 {
-  margin-left: 70px;
+  margin-left: 100px;
+
 }
 p.block2 {
   margin-left: 20px;
+
 }
 p.block3 {
   margin-left: 20px;
+ 
 }
 p.block4 {
   margin-left: 20px;
