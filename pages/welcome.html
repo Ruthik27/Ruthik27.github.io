@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- to relaod to top page-->
+    <script></script>
+    <style>
+      /* CSS for the welcome screen */
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
+        background-color: #1b262c;
+        color: #ededed;
+        background-image: url("../images/bg01.jpg"); /* Set the background image directly on the body element */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      /* Hide the scroll bar */
+      .scroll-container {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .welcome-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        background-image: url("../images/bg01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        color: #fff;
+      }
+
+      .content {
+        margin-bottom: 20px;
+      }
+
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .logo {
+        border-radius: 50%;
+        width: 40%;
+        height: auto;
+        box-shadow: 0 0 0 rgb(0, 0, 0); /* Adjust the shadow color and size as needed */
+        animation: glow 1.5s infinite alternate;
+      }
+
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+        }
+        30% {
+          box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.5);
+        }
+        60% {
+          box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+        }
+        100% {
+          box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      .text-container {
+        margin-bottom: 20px;
+      }
+
+      .bottom-icons {
+        filter: brightness(0) invert(1);
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 1;
+      }
+
+      .bottom-icons img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 20px; /* Add margins around the icons */
+      }
+
+      .welcome-section.fade-out {
+        opacity: 0;
+      }
+
+      .welcome-section h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      /* The Typewriter Effect */
+
+      /* Typewriter effect 1 */
+
+      /* The Typewriter Effect */
+
+      .welcome-section p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .welcome-section blockquote {
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+
+      .bottom-icons {
+        padding-top: 10px;
+      }
+
+      /* CSS for the hiding welcome content */
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+      #welcome {
+        background-color: #f0f0f0;
+        position: relative;
+      }
+
+      #welcome .content {
+        position: absolute;
+        bottom: 100px; /* Adjust the value to move the content up or down */
+      }
+
+      #welcome .content {
+        position: absolute;
+        bottom: 100px; /* Adjust the value to move the content up or down */
+      }
+      .top-nav {
+        /* initial styles for the navigation bar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .top-nav .social-icons {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .top-nav .social-icons img {
+        filter: brightness(0) invert(1);
+        margin-right: 30px; /* Add spacing between the icons */
+      }
+
+      .top-nav .social-icons .rightmost-icon {
+        margin-right: 40px;
+      }
+
+      .top-nav .social-icons img[src$="discord.svg"],
+      .top-nav .social-icons img[src$="github.svg"],
+      .top-nav .social-icons img[src$="gmail.svg"],
+      .top-nav .social-icons img[src$="googlecloud.svg"],
+      .top-nav .social-icons img[src$="instagram.svg"],
+      .top-nav .social-icons img[src$="linkedin.svg"],
+      .top-nav .social-icons img[src$="kaggle.svg"],
+      .top-nav .social-icons img[src$="medium.svg"] {
+        height: 40px; /* Adjust the height of LinkedIn and Kaggle icons */
+      }
+
+      /* CSS for the topic sections */
+      /*cbjhsdhcbkjdscjkbsdkjcjkdsbckjsdbjcbsdkjcbjksbdckjdbsjkcbkjdsadbckjdsbckjbsdkjcbdskjcbkjdsbckj*/
+
+      .main-section {
+        width: 100vw;
+        height: 500px;
+        padding: 0 20px;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        background-color: transparent;
+      }
+
+      .card {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 10px;
+        flex-shrink: 0;
+        background-color: gray;
+        color: #1b262c;
+        text-align: center;
+      }
+
+      /* Hide the scrollbar */
+      .main-section::-webkit-scrollbar {
+        display: none;
+      }
+
+      #scroll-section {
+        width: 300px;
+        height: 400px;
+        overflow-y: scroll;
+        background-color: #0e0e0e;
+        padding: 10px;
+      }
+
+      #bullet-list {
+        list-style-type: disc;
+        color: white;
+      }
+
+      /* CSS for the footer */
+      /* CSS for the footer */
+      /* CSS for the footer */
+
+      #welcome {
+        min-height: calc(
+          100% - 1em
+        ); /* Subtract the height of the header and footer */
+      }
+
+      /* Style the footer */
+      footer {
+        padding: 1em;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        height: 2px; /* Set the height of the footer to 10 pixels */
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 12px; /* Adjust the font size of the text within the footer */
+      }
+
+      ::-webkit-scrollbar {
+        width: 0; /* Remove scrollbar space */
+        background: transparent; /* Optional: just make scrollbar invisible */
+      }
+      /* Optional: show position indicator in red */
+      ::-webkit-scrollbar-thumb {
+        background: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav initial">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ruthik-kale/" target="_blank">
+          <img src="../icons/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Ruthik27" target="_blank">
+          <img src="../icons/github.svg" alt="github" />
+        </a>
+        <a href="https://medium.com/" target="_blank">
+          <img src="../icons/medium.svg" alt="medium" />
+        </a>
+        <a href="mailto:ruthikkale1@gmail.com" target="_blank">
+          <img src="../icons/gmail.svg" alt="gmail" />
+        </a>
+        <a href="https://www.kaggle.com/" target="_blank">
+          <img
+            src="../icons/kaggle.svg"
+            alt="SVG Image"
+            class="rightmost-icon"
+          />
+        </a>
+      </div>
+    </nav>
+    <!--  
+ Delete the navigation bar
+ And add circular icons on the bottom but should be overlayer and should be simple
+ herf this icons to the section which would be below
+ Delete the scroll function 
+ Icons should include HOME + all other sections 
+ for now let the image be permanent
+ make the nav background to be transparent
+
+
+-->
+    <!-- Welcome Screen -->
+    <section class="welcome-section" id="welcome">
+      <div class="content">
+        <div class="logo-container">
+          <img src="../images/port/port0.jpg" alt="Logo" class="logo" />
+        </div>
+        <div class="text-container">
+          <h1>Ruthik Kale</h1>
+          <p>
+            Graduate Student at
+            <a
+              href="https://grad.uga.edu/"
+              target="_blank"
+              style="color: #ffffff"
+              onmouseover="this.style.color='#d400ff';"
+              onmouseout="this.style.color='#ffffff';"
+              >University of Georgia</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="bottom-icons">
+        <a href="./welcome.html" style="text-decoration: none">
+          <img
+            src="../icons/home.svg"
+            alt="Home"
+            style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+            onmouseover="this.style.filter='brightness(0) invert(1);'"
+          />
+        </a>
+        <a href="./education.html" style="text-decoration: none">
+          <img
+            src="../icons/grid.svg"
+            alt="Education"
+            style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+            onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+            onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+          />
+        </a>
+        <a href="./experience.html" style="text-decoration: none">
+          <img
+            src="../icons/list.svg"
+            alt="Experience"
+            style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+            onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+            onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+          />
+        </a>
+        <a href="./certificate.html" style="text-decoration: none">
+          <img
+            src="../icons/trophy.svg"
+            alt="Certificates"
+            style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+            onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+            onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+          />
+        </a>
+        <a href="./project.html" style="text-decoration: none">
+          <img
+            src="../icons/laptop.svg"
+            alt="Projects"
+            style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+            onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+            onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+          />
+        </a>
+        <a href="./blog.html" style="text-decoration: none">
+          <img
+            src="../icons/download.svg"
+            alt="Blog"
+            style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+            onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+            onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+          />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      let currentPage = 1;
+      const itemsPerPage = 10;
+
+      // Function to fetch new content based on the current page
+      function fetchContent(page) {
+        // Make an AJAX request or fetch API call to retrieve the content for the given page
+        // Example: Use an API endpoint to fetch content from a server
+        return fetch(`/api/content?page=${page}&limit=${itemsPerPage}`)
+          .then((response) => response.json())
+          .then((data) => {
+            // Assuming the API response contains an array of items
+            const items = data.items;
+            // Display the items in the scrollContainer element
+            const scrollContainer = document.getElementById("education");
+            items.forEach((item) => {
+              const newItem = document.createElement("div");
+              newItem.textContent = item;
+              scrollContainer.appendChild(newItem);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching content:", error);
+          });
+      }
+
+      // Function to check if the user has reached the bottom of the scroll container
+      function isScrollAtBottom() {
+        const scrollContainer = document.getElementById("education");
+        const scrollTop = scrollContainer.scrollTop;
+        const scrollHeight = scrollContainer.scrollHeight;
+        const containerHeight = scrollContainer.clientHeight;
+        return scrollTop + containerHeight >= scrollHeight;
+      }
+
+      // Function to handle scroll events and trigger fetching of new content
+      function handleScroll() {
+        if (isScrollAtBottom()) {
+          currentPage++;
+          fetchContent(currentPage);
+        }
+      }
+
+      // Add a scroll event listener to the scrollContainer element
+      const scrollContainer = document.getElementById("education");
+      scrollContainer.addEventListener("scroll", handleScroll);
+
+      // Initial fetch of content
+      fetchContent(currentPage);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* CSS for the welcome screen */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
+        background-color: #1b262c;
+        color: #ededed;
+        background-image: url("../images/bg01.jpg"); /* Set the background image directly on the body element */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .top-nav {
+        /* initial styles for the navigation bar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .top-nav .social-icons {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .top-nav .social-icons img {
+        filter: brightness(0) invert(1);
+        margin-right: 30px; /* Add spacing between the icons */
+      }
+
+      .top-nav .social-icons .rightmost-icon {
+        margin-right: 40px;
+      }
+
+      .top-nav .social-icons img[src$="discord.svg"],
+      .top-nav .social-icons img[src$="github.svg"],
+      .top-nav .social-icons img[src$="gmail.svg"],
+      .top-nav .social-icons img[src$="googlecloud.svg"],
+      .top-nav .social-icons img[src$="instagram.svg"],
+      .top-nav .social-icons img[src$="linkedin.svg"],
+      .top-nav .social-icons img[src$="kaggle.svg"],
+      .top-nav .social-icons img[src$="medium.svg"] {
+        height: 40px; /* Adjust the height of LinkedIn and Kaggle icons */
+      }
+
+      .content {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10% 20% 0% 20%;
+      }
+
+      .experience {
+        margin-bottom: 20px;
+      }
+
+      .experience .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      .experience h3 {
+        margin: 0;
+        display: inline;
+      }
+
+      .experience .position {
+        font-weight: bold;
+      }
+
+      .experience .dates {
+        font-style: italic;
+      }
+
+      .experience .details ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .bottom-icons {
+        filter: brightness(0) invert(1);
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 1;
+      }
+
+      .bottom-icons img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 20px; /* Add margins around the icons */
+      }
+      /* Style the footer */
+      #experience {
+        min-height: calc(
+          100% - 1em
+        ); /* Subtract the height of the header and footer */
+      }
+      footer {
+        padding: 1em;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        height: 2px; /* Set the height of the footer to 10 pixels */
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 12px; /* Adjust the font size of the text within the footer */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .resume-section {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        text-align: center;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav initial">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ruthik-kale/">
+          <img src="../icons/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Ruthik27" target="_blank">
+          <img src="../icons/github.svg" alt="github" />
+        </a>
+        <a href="https://medium.com/">
+          <img src="../icons/medium.svg" alt="medium" />
+        </a>
+        <a href="mailto:ruthikkale1@gmail.com">
+          <img src="../icons/gmail.svg" alt="gmail" />
+        </a>
+        <a href="https://www.kaggle.com/">
+          <img
+            src="../icons/kaggle.svg"
+            alt="SVG Image"
+            class="rightmost-icon"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Welcome Screen -->
+    <div class="resume-section">
+      <div class="header">
+        <h1>Your Name</h1>
+        <p>Address | Phone | Email</p>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+        <p>Details about your education here.</p>
+      </div>
+      <div class="section">
+        <h2>Experience</h2>
+        <p>Details about your work experience here.</p>
+      </div>
+      <div class="section">
+        <h2>Skills</h2>
+        <p>Details about your skills here.</p>
+      </div>
+    </div>
+    <!-- Bottom Icons -->
+    <div class="bottom-icons">
+      <a href="./welcome.html" style="text-decoration: none">
+        <img
+          src="../icons/home.svg"
+          alt="Home"
+          style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+          onmouseover="this.style.filter='brightness(0) invert(1);'"
+        />
+      </a>
+      <a href="./education.html" style="text-decoration: none">
+        <img
+          src="../icons/grid.svg"
+          alt="Education"
+          style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+          onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+          onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+        />
+      </a>
+      <a href="./experience.html" style="text-decoration: none">
+        <img
+          src="../icons/list.svg"
+          alt="Experience"
+          style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+          onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+          onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+        />
+      </a>
+      <a href="./certificate.html" style="text-decoration: none">
+        <img
+          src="../icons/trophy.svg"
+          alt="Certificates"
+          style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+          onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+          onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+        />
+      </a>
+      <a href="./project.html" style="text-decoration: none">
+        <img
+          src="../icons/laptop.svg"
+          alt="Projects"
+          style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+          onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+          onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+        />
+      </a>
+      <a href="./blog.html" style="text-decoration: none">
+        <img
+          src="../icons/download.svg"
+          alt="Blog"
+          style="filter: drop-shadow(0 0 5px purple); transition: filter 0.3s"
+          onmouseover="this.style.filter='drop-shadow(0 0 10px purple)';"
+          onmouseout="this.style.filter='drop-shadow(0 0 5px purple)';"
+        />
+      </a>
+    </div>
+    <footer>
+      <p>&copy; 2023 My Website. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
