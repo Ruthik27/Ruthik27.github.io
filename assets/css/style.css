@@ -8,15 +8,6 @@
  */
 
 
-/* By default, hide all sections */
-[data-page] {
-  display: none;
-}
-
-/* Display only the section with the .active class */
-[data-page].active {
-  display: block;
-}
 
 
 
