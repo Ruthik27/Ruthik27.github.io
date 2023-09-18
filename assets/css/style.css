@@ -867,7 +867,9 @@ main {
   border-radius: inherit;
 }
 
-
+.badge-container a {
+  display: inline-block;
+}
 
 
 
