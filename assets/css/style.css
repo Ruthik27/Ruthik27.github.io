@@ -766,6 +766,10 @@ main {
 
 .article-title { margin-bottom: 30px; }
 
+.timeline-courses {
+  color: var(--light-gray);
+}
+
 
 /**
  * education and experience 
@@ -871,7 +875,15 @@ main {
   display: inline-block;
 }
 
+  .h4.timeline-item-title a {
+    display: inline;
+    color: white;
+    transition: color 0.3s;  /* Add a smooth transition effect */
+  }
 
+  .h4.timeline-item-title a:hover {
+    color: var(--vegas-gold)  /* Change the color on hover */
+  }
 
 /*-----------------------------------*\
   #PORTFOLIO
