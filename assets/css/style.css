@@ -300,6 +300,8 @@ article.active {
   #MAIN
 \*-----------------------------------*/
 
+
+
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
@@ -881,10 +883,32 @@ main {
     transition: color 0.3s;  /* Add a smooth transition effect */
   }
 
-  .h4.timeline-item-title a:hover {
-    color: var(--vegas-gold)  /* Change the color on hover */
+  .timeline-item-title a:hover {
+    text-shadow: 0 0 10px rgba(229, 228, 223, 0.188); /* Adjust the color and blur for the glowing text effect */
+    transition: color 0.3s ease-in-out; /* Optional: Add a smooth transition */
+    color: var(--vegas-gold);
   }
-
+  
+  .timeline-item-title a:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(231, 229, 221, 0.2); /* Adjust the color and opacity for the light behind the text */
+    z-index: -1;
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .timeline-item-title {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
 
 /*-----------------------------------*\
   #PORTFOLIO

@@ -1,6 +1,26 @@
 'use strict';
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var hasVisited = localStorage.getItem('hasVisited');
+    var gifContainer = document.getElementById('intro-gif');
+
+    if (!hasVisited) {
+        // Show the gif
+        gifContainer.style.display = 'flex';
+
+        // Hide the gif after it has played
+        setTimeout(function() {
+            gifContainer.style.display = 'none';
+        }, 3000); // Set this to the length of your GIF
+
+        // Set 'hasVisited' to true
+        localStorage.setItem('hasVisited', 'true');
+    } else {
+        // Hide the gif immediately if visited
+        gifContainer.style.display = 'none';
+    }
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -157,3 +177,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
