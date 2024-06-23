@@ -1135,14 +1135,26 @@
         </section>
   
       </article>
-    </div>
-
-  </main>
-
-
-
-
-
+  
+    </main>
+  
+    <script>
+      async function fetchAndLogIP() {
+        try {
+          console.log('Fetching IP address...');
+          const response = await fetch('https://api64.ipify.org?format=json');
+          const data = await response.json();
+          const ip = data.ip;
+          console.log('IP Address fetched: ', ip);
+  
+          document.getElementById('ipInput').value = ip;
+        } catch (error) {
+          console.error('Error fetching IP address:', error);
+        }
+      }
+  
+      fetchAndLogIP();
+    </script>
 
   <!--
     - custom js link
