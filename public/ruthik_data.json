@@ -1,0 +1,324 @@
+{
+  "identity": {
+    "name": "Ruthik Kale",
+    "initials": "RK",
+    "titles": ["Machine Learning Specialist","Data Scientist","ML Engineer","Data Science Pioneer"],
+    "tagline": "I architect intelligence from raw data.",
+    "location": "Florida",
+    "timezone": "America/New_York",
+    "email": "ruthikkale1@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ruthik-kale/",
+    "github": "https://github.com/Ruthik27",
+    "portfolio": "https://ruthik27.github.io/",
+    "photo": "https://picsum.photos/seed/ruthik/800/1000",
+    "resume": "/resume.pdf"
+  },
+  "stats": [
+    {"value":3,"label":"Years in ML","suffix":"+"},
+    {"value":100,"label":"Events Scored","suffix":"k+"},
+    {"value":150,"label":"Students Mentored","suffix":"+"},
+    {"value":25,"label":"ML Models Built","suffix":"+"}
+  ],
+  "experience": [
+    {
+      "id":1,
+      "role":"ML Specialist",
+      "org":"Florida Gulf Coast University",
+      "roleShort":"Machine Learning Specialist",
+      "period":"Apr 2025 – Present",
+      "location":"Fort Myers, FL",
+      "tags":["MLOps","Predictive Analytics","SQL","ETL","Business Intelligence (BI)","Stakeholder Communication","Data Pipeline"],
+      "description":[
+        "Architected end-to-end predictive analytics pipelines with Podman/Docker and Apache Airflow, automating daily data ingestion, feature engineering, and CatBoost model inference on 100k+ historical records.",
+        "Designed, tuned, and validated multiple classification models (CatBoost with Optuna) to predict churn/risk, delivering 80%+ accuracy and 10–15% performance gains.",
+        "Integrated predictions into Oracle database and reporting workflows, enabling self-serve dashboards for non-technical stakeholders."
+      ],
+      "media_urls":["https://www.fgcu.edu/planning/"]
+    },
+    {
+      "id":2,
+      "role":"Graduate RA",
+      "org":"Carl Vinson Institute of Government, UGA",
+      "roleShort":"Graduate Research Assistant",
+      "period":"Aug 2023 – Dec 2024",
+      "location":"Athens, GA",
+      "tags":["Deep Learning","Computer Vision","Geospatial Analytics","Experiment Tracking","HPC & GPU Computing","Web Mapping","DevSecOps"],
+      "description":[
+        "Built and trained deep learning models (Mask R-CNN, Res2UNet, SegFormer) on high-resolution Maxar imagery from the 2023 Morocco earthquake, reaching peak AP of 0.8757.",
+        "Engineered end-to-end ML pipeline: tiled large satellite TIFFs into 1024×1024 patches, generated building masks from shapefiles, converted to TFRecords, optimized on A100 HPC with Neptune tracking.",
+        "Developed Leaflet-app, a GitLab-hosted interactive web tool visualizing real-time ACLED conflict data with secure API access and GitLab CI/CD."
+      ],
+      "media_urls":["https://cviog.uga.edu/data-technology/index.html"]
+    },
+    {
+      "id":3,
+      "role":"Graduate SR",
+      "org":"The University of Georgia",
+      "roleShort":"Graduate Student Researcher",
+      "period":"Aug 2023 – Dec 2024",
+      "location":"Athens, GA",
+      "tags":["Time Series Forecasting","Statistical Modeling","Gradient Boosting","Deep Learning for Sequences","Data Wrangling","EDA","Model Evaluation"],
+      "description":[
+        "Led Master's Research on multivariate time series forecasting of traffic flow using 5-minute data from 100+ California PeMS sensors.",
+        "Built end-to-end forecasting pipeline (web scraping, cleaning, feature engineering, Min-Max scaling, EDA) justifying a multivariate approach.",
+        "Implemented LSTM achieving top performance (MAE ~7.9, R² ~0.99); informed proposals for CNN-LSTM hybrids and real-time ITS deployment."
+      ],
+      "media_urls":[]
+    },
+    {
+      "id":4,
+      "role":"Intern - OUA & FMD",
+      "org":"The University of Georgia - OUA & FMD / UGA",
+      "roleShort":"Intern",
+      "period":"May 2023 – Jul 2023",
+      "location":"Athens, GA",
+      "tags":["Python Scripting","Workflow Automation","Digital Asset Management","Version Control","Metadata Management","Batch Processing"],
+      "description":[
+        "Digitally transformed 1,000+ legacy architectural blueprints by standardizing formats (PDF/A, TIFF) and centralizing access for the Office of University Architect.",
+        "Built a Python-driven workflow (PyMuPDF, Pillow) to batch-process and sync blueprint files across internal servers and SharePoint, cutting retrieval time by ~75%.",
+        "Supported migration of ~50TB of archives to a hybrid NAS/cloud environment with folder taxonomies, tagging, and version control."
+      ],
+      "media_urls":["https://www.architects.uga.edu/"]
+    },
+    {
+      "id":5,
+      "role":"Graduate TA",
+      "org":"The University of Georgia - UGA School of Computing",
+      "roleShort":"Graduate Teaching Assistant",
+      "period":"Aug 2022 – May 2023",
+      "location":"Athens, GA",
+      "tags":["Mentoring","Data Science & Statistics Tutoring","Agile Methodologies","Public Speaking"],
+      "description":[
+        "Supported Data Science and Discrete Mathematics courses at UGA School of Computing, earning a full tuition waiver through high teaching performance.",
+        "Mentored 150+ students in advanced analytics, statistical methods, and predictive modeling, contributing to a 35% increase in high-quality project submissions.",
+        "Led project-based labs in Python, Java, and C++ for 100+ students with a 95% course-completion rate."
+      ],
+      "media_urls":["https://www.cs.uga.edu/"]
+    },
+    {
+      "id":6,
+      "role":"Board Member – Treasurer",
+      "org":"AISSMS Institute of Information Technology",
+      "roleShort":"Board Member",
+      "period":"Jul 2021 – Jun 2022",
+      "location":"Pune, India",
+      "tags":["Financial Reporting","Budgeting"],
+      "description":[
+        "Elected Treasurer of CESA for 2021–22, representing B.E. Computer Engineering students and partnering with faculty on budgeting decisions.",
+        "Managed budgets and expense tracking for technical and cultural events, maintaining transparent financial records.",
+        "Introduced structured digital tracking (spreadsheets and documentation) for payments, reimbursements, and event costs."
+      ],
+      "media_urls":[]
+    },
+    {
+      "id":7,
+      "role":"Data Analyst (Internship)",
+      "org":"Bro Services Startup",
+      "roleShort":"Data Analyst",
+      "period":"Apr 2021 – Oct 2021",
+      "location":"Pune, India",
+      "tags":["Data Analytics","Microsoft Power BI","Dashboard Building","ETL","AWS","Python","SQL"],
+      "description":[
+        "Engineered cloud-based ETL pipelines on AWS to automate e-commerce data ingestion, cutting reporting latency by ~50% and improving forecasting accuracy by ~20%.",
+        "Built analytics stack combining Selenium/PyTest automation, Node.js + SQL full-stack tracking app, and ML delivery-route models, reducing downtime ~40% and lifting satisfaction ~20%.",
+        "Designed interactive Power BI KPI dashboards using DAX/SQL and Python/R, driving ~25–35% improvements in conversion, BI adoption, and forecasting accuracy."
+      ],
+      "media_urls":[]
+    }
+  ],
+  "projects": [
+    {"id":"01","picture_serach": "Global Analytics","name":"GeoInsight-Global-Conflict-and-Crisis-Mapping","title":"GeoInsight: Global Conflict & Crisis Mapping","language":"JavaScript","stars":4,"forks":0,"license":"MIT","url":"https://github.com/Ruthik27/GeoInsight-Global-Conflict-and-Crisis-Mapping","description":"Real-time geopolitical event analysis platform showcasing competitive analysis and industry research relevant to understanding the financial impact of climate risks at a property level.","topics":["nodejs","javascript","api","jquery","docker","npm","axios","leafletjs","acled"],"custom_image":"https://github.com/Ruthik27/GeoInsight-Global-Conflict-and-Crisis-Mapping/assets/62241739/b5889ff7-4650-47e0-abe1-fd26d0b7abcf"},
+    {"id":"02","picture_serach": "Building Detection","name":"Building_Detection","title":"Building Detection","language":"Python","stars":4,"forks":0,"license":"MIT","url":"https://github.com/Ruthik27/Building_Detection","description":"Leverages Mask R-CNN to automate identification of buildings in satellite images after disasters using high-resolution Maxar imagery.","topics":["tensorflow","ml","faster-rcnn","geopandas","rasterio","mask-rcnn","neptune-ai"],"custom_image":"https://github.com/Ruthik27/Building_Detection/assets/62241739/bc40098e-8385-4880-9f7a-62f85abd22aa"},
+    {"id":"03","picture_serach": "Investment Analytics","name":"EstateAI-Intelligent-Real-Estate-Investment-Analytics","title":"EstateAI: Real Estate Investment Analytics","language":"R","stars":0,"forks":0,"license":"MIT","url":"https://github.com/Ruthik27/EstateAI-Intelligent-Real-Estate-Investment-Analytics","description":"A comprehensive Shiny application to explore Airbnb properties based on a variety of filters with an intuitive user interface.","topics":[]}
+  ],
+  "education": [
+    {
+      "degree": "Master of Science, Computer Science",
+      "school": "The University of Georgia",
+      "subSchool": "School of Computing",
+      "year": "2022–2024",
+      "description": "Earned a full tuition waiver for the Graduate Program through Graduate Teaching and Research Assistantships.",
+      "link": "https://www.cs.uga.edu/ms-computer-science-non-thesis-option",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Georgia_Athletics_logo.svg/960px-Georgia_Athletics_logo.svg.png?_=20170412213713"
+    },
+    {
+      "degree": "Bachelor of Engineering, Computer Engineering",
+      "school": "Savitribai Phule Pune University",
+      "subSchool": "AISSMS Institute of Information Technology",
+      "year": "2018–2022",
+      "description": "Grade: First class with distinction & Honors in Data Science",
+      "link": "https://aissmsioit.org/",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/f/f6/Savitribai_Phule_Pune_University_Logo.png"
+    }
+  ],
+  "skills": {
+    "ML / AI": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Time Series Forecasting", "Predictive Analytics", "TensorFlow"],
+    "Data & Analytics": ["Data Visualization", "KPI Dashboards", "Statistical Modeling", "Supply Chain & Operations Analytics", "A/B Testing", "Experiment Design"],
+    "Cloud & MLOps": ["AWS", "Docker/Podman", "Apache Airflow", "ETL Pipelines", "Model Deployment", "Experiment Tracking", "Monitoring & Observability"],
+    "Languages": ["Python", "R", "SQL"],
+    "Databases & Systems": ["SQL Databases", "Oracle", "Database Management", "Distributed Systems", "Computer Networks"]
+  },
+  "certifications": [
+    {
+      "name": "Data Science: Foundations using R",
+      "issuer": "The Johns Hopkins University",
+      "issued": "Apr 2023",
+      "credential_id": null,
+      "show_credential_url": "https://www.coursera.org/account/accomplishments/specialization/YRJY5SNKA39A",
+      "category": "Data Science"
+    },
+    {
+      "name": "Applied Data Science with Python Specialization",
+      "issuer": "University of Michigan",
+      "issued": "Jun 2022",
+      "credential_id": null,
+      "show_credential_url": "https://coursera.org/verify/specialization/RXFQENRNLRTN",
+      "category": "Data Science"
+    },
+    {
+      "name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      "issuer": "Amazon Web Services (AWS)",
+      "issued": "May 2021",
+      "credential_id": null,
+      "show_credential_url": "https://www.credly.com/go/QUOnTxni",
+      "category": "Cloud"
+    },
+    {
+      "name": "Database Programming with SQL",
+      "issuer": "Oracle",
+      "issued": "May 2021",
+      "credential_id": null,
+      "show_credential_url": null,
+      "category": "Database"
+    },
+    {
+      "name": "Google IT Support Professional Certificate",
+      "issuer": "Google",
+      "issued": "Apr 2021",
+      "credential_id": null,
+      "show_credential_url": "https://www.credly.com/badges/f82132b1-573b-4b4c-888f-02509edad579?source=linked_in_profile",
+      "category": "IT Support"
+    },
+    {
+      "name": "Python Core",
+      "issuer": "Sololearn",
+      "issued": "Mar 2021",
+      "credential_id": null,
+      "show_credential_url": "https://www.sololearn.com/certificates/course/en/20732008/1073/landscape/png",
+      "category": "Python"
+    },
+    {
+      "name": "Practical Web Development",
+      "issuer": "Udemy",
+      "issued": "Mar 2021",
+      "credential_id": "UC-a44f5d4e-6f99-491c-8ca0-da6e032ef17b",
+      "show_credential_url": "http://ude.my/UC-a44f5d4e-6f99-491c-8ca0-da6e032ef17b",
+      "category": "Web Development"
+    },
+    {
+      "name": "The Bits and Bytes of Computer Networking",
+      "issuer": "Coursera",
+      "issued": "Feb 2021",
+      "credential_id": null,
+      "show_credential_url": "http://coursera.org/verify/AHYDQGFHV79C",
+      "category": "Networking"
+    },
+    {
+      "name": "Database Programming with PL/SQL",
+      "issuer": "Oracle",
+      "issued": "Dec 2020",
+      "credential_id": null,
+      "show_credential_url": null,
+      "category": "Database"
+    },
+    {
+      "name": "AWS Business Essential",
+      "issuer": "Udemy",
+      "issued": "Dec 2020",
+      "credential_id": "UC-eebf2713-9c36-4e91-8825-58532724e0b1",
+      "show_credential_url": "http://ude.my/UC-eebf2713-9c36-4e91-8825-58532724e0b1",
+      "category": "Cloud"
+    },
+    {
+      "name": "Cybersecurity Essentials",
+      "issuer": "Cisco",
+      "issued": "Nov 2020",
+      "credential_id": null,
+      "show_credential_url": "https://www.youracclaim.com/badges/9051dd0f-4266-4efa-9a9b-e65241742e2f?source=linked_in_profile",
+      "category": "Security"
+    },
+    {
+      "name": "Introduction to Cybersecurity",
+      "issuer": "Cisco",
+      "issued": "Oct 2020",
+      "credential_id": null,
+      "show_credential_url": "https://www.youracclaim.com/badges/95e49d65-c835-4031-922b-0f6f307133d6?source=linked_in_profile",
+      "category": "Security"
+    },
+    {
+      "name": "The Data Scientist's Toolbox",
+      "issuer": "The Johns Hopkins University",
+      "issued": "Sep 2020",
+      "credential_id": null,
+      "show_credential_url": "http://coursera.org/verify/H5FLS9WAMNBJ",
+      "category": "Data Science"
+    },
+    {
+      "name": "Introduction to Data Science in Python",
+      "issuer": "University of Michigan",
+      "issued": "May 2020",
+      "credential_id": null,
+      "show_credential_url": "http://coursera.org/verify/WTPNC2CAUKSR",
+      "category": "Data Science"
+    },
+    {
+      "name": "Deep Learning Onramp",
+      "issuer": "MathWorks",
+      "issued": "May 2020",
+      "credential_id": null,
+      "show_credential_url": "https://matlabacademy.mathworks.com/progress/share/report.html?id=4106c7a6-282a-4663-97d0-df03169207e2",
+      "category": "Machine Learning"
+    },
+    {
+      "name": "Machine Learning Onramp",
+      "issuer": "MathWorks",
+      "issued": "May 2020",
+      "credential_id": null,
+      "show_credential_url": "https://matlabacademy.mathworks.com/progress/share/report.html?id=f80daf88-9eb5-46e3-83f0-5b92f8f1216b",
+      "category": "Machine Learning"
+    },
+    {
+      "name": "IT Academy: Software Defined Storage Concepts",
+      "issuer": "VMware",
+      "issued": "May 2020",
+      "credential_id": null,
+      "show_credential_url": "https://www.youracclaim.com/badges/8aaac45e-de4b-4f8e-a31c-b262025ebb56?source=linked_in_profile",
+      "category": "Infrastructure"
+    },
+    {
+      "name": "IT Academy: Network Virtualization Concepts",
+      "issuer": "VMware",
+      "issued": "May 2020",
+      "credential_id": null,
+      "show_credential_url": "https://www.youracclaim.com/badges/d896f6aa-de8b-4bcd-8820-2c53ea31e82e?source=linked_in_profile",
+      "category": "Infrastructure"
+    },
+    {
+      "name": "Python for Everybody Specialization",
+      "issuer": "University of Michigan",
+      "issued": "May 2020",
+      "credential_id": null,
+      "show_credential_url": "http://coursera.org/verify/specialization/S7KKPKMP4Z22",
+      "category": "Python"
+    },
+    {
+      "name": "Complete Python Bootcamp: Python 3",
+      "issuer": "Udemy",
+      "issued": "May 2020",
+      "credential_id": "UC-fb7673bc-3f5e-43c6-812b-216c836848f6",
+      "show_credential_url": "http://ude.my/UC-fb7673bc-3f5e-43c6-812b-216c836848f6",
+      "category": "Python"
+    }
+  ],
+  "marquee":["Python","TensorFlow","Deep Learning","CatBoost","AWS","R","Machine Learning","Predictive Analytics","Data Viz","Supply Chain","Airflow","Docker","PyTorch","Scikit-Learn","Keras","NLP","SQL","Java","Oracle","MLOps"]
+}
